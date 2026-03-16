@@ -31,3 +31,7 @@ Route::get('product/displaygrid','App\Http\Controllers\productController@display
 Route::get('product/additem/{id}', 'App\Http\Controllers\productController@additem')->name('products.additem');
 
 Route::get('product/emptycart', 'App\Http\Controllers\productController@emptycart')->name('product.emptycart');
+
+Route::get('scorder/checkout','App\Http\Controllers\scorderController@checkout')->name('scorders.checkout');
+
+Route::post('scorder/placeorder','App\Http\Controllers\scorderController@placeorder')->name('scorders.placeorder');
